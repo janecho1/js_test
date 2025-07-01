@@ -1,0 +1,43 @@
+ul{
+    list-style: none;
+}
+
+.korea{
+    color: red;
+}
+
+/*클래스 셀렉터*/
+.basic {
+    color: blue;
+   
+}
+.special{
+    color: red;
+}
+.art{
+    color: green;
+}
+.physical {
+    color: pink;
+}
+/*아이디 셀렉터*/
+#now {
+    color: aquamarine;
+    font-weight: 700;
+}
+
+.art, .physical {
+    font-style: italic;
+}
+
+ol h3 {
+    /*ol 안에 들어있는 h3만 선택*/
+    font-weight: 100;
+}
+
+.art:hover{
+    /*마우스가 위에 올라갔을때 상태*/
+    font-size: large;
+    color: azure;
+    background-color: pink
+}

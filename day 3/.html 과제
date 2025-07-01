@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습일지</title>
+</head>
+<body>
+    <h1>학습일지</h1>
+    <label>이름</label>
+    <input type="text"/>
+    <label>비밀번호</label>
+    <input type="password"/>
+
+    <label>과목</label>
+    <select>
+        <option>일반</option>
+        <option>전공</option>
+    </select>
+    
+    <h2>과목</h2>
+    <input type="radio" name="team"/><label>국어</label>
+    <input type="radio" name="team"/><label>수학</label>
+    <input type="radio" name="team"/><label>영어</label>
+    <input type="radio" name="team"/><label>사회</label>
+    <input type="radio" name="team"/><label>과학</label>
+    <input type="radio" name="team"/><label>미술</label>
+    <input type="radio" name="team"/><label>체육</label>
+    <input type="radio" name="team"/><label>프밍</label>
+    <input type="radio" name="team"/><label>컴구</label>
+
+    <h2>학습일지 작성</h2>
+    <textarea cols = "50", rows="20"></textarea>
+    
+    <input type="button" value="완료"
+    name = "complete"/>
+
+</body>
+</html>

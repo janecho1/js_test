@@ -1,0 +1,231 @@
+.main__day {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 60px;
+   
+}
+
+.main__day--title {
+    font-size: 30px;
+    color: rgb(35, 28, 22);
+}
+
+.main__day--day {
+    font-size: 23px;
+    margin-top: 7px;
+}
+
+.main__diary {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 30px;
+    background-color: rgb(213, 221, 211);
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.main__memo {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-top: 35px;
+    width: 240px;
+    height: 73px;
+    border-radius: 10px;
+    background-color: rgb(245, 240, 234);
+}
+
+.memo__title {
+    display: flex;
+    font-size: 28px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.main__diary--box {
+    width: 450px;
+    height: 170px;
+    margin-left: 15px;
+}
+
+.main__diary--second {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    background-color: black;
+    width: 450px;
+    height: 70px;
+    border-radius: 20px;
+    margin-left: 19px;
+}
+
+.main__diary--second:hover {
+    background-color: rgb(123, 123, 123);
+}
+
+.main__diary--second-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.main__note {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 340px;
+    margin-left: 3%;
+}
+
+.main__note1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 30px;
+    height: 350px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgb(227, 233, 238);
+   
+}
+
+.main__note--title {
+    font-size: 30px;
+    color: rgb(63, 47, 22);
+    margin-left: 10px;
+}
+
+.main__note--box {
+    background-color: white;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.main__note--text{
+    margin-top: 9px;
+    font-size: 19px;
+    color: rgb(87, 87, 87);
+    margin-left: 10px;
+}
+
+.main__note--content {
+    margin-top: 11px;
+    margin-left: 10px;
+}
+
+.main__graph{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 30px;
+    height: 350px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.main__graph--title {
+    font-size: 30px;
+    color: rgb(63, 47, 22);
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.main__graph--box {
+    background-color: white;
+    margin-right: 20px;
+    margin-top: 28px;
+    margin-left: 20px;
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.main__graph--text{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(118, 107, 93);
+}
+
+.real__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1060px;;
+    margin-left: 620px;
+    margin-right: 550px;
+    width: 870px;
+    height: 960px;
+    background-color: rgb(251, 231, 236);
+    border-radius: 20px;
+    padding-top: 100px;/*상단 공간 확보*/
+}
+.real__box--header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.real__box--title {
+    font-size: 48px;
+    margin-right: 30px;
+    
+}
+
+.real__box--mini{
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 5px;
+    width: 140px;
+    height: 13px;
+    padding: 5px;
+  margin-top: -25px;
+ margin-left: 600px;
+}
+
+.real__box--mini--text-1{
+color: rgb(152, 152, 152);
+}
+
+.real__box--contentbox {
+    background-color: rgb(253, 249, 249);
+    border-radius: 20px;
+    width: 700px;
+    height: 800px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding: 100px 30px;
+    position: relative;
+}
+.real__box--content--title{
+    font-size: 25px;
+    color: rgb(24, 20, 12);
+   position: absolute;
+   top: 30px;
+
+}
+.real__box--content {
+    width: 680px;
+    height: 750px;
+    margin-left: -10px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: -70px;
+    margin-top: -20px;
+}

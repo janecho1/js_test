@@ -1,0 +1,140 @@
+.container_top{
+    width: 100%;
+    height: 200;
+    background-color: aqua;
+    border: 4px solid black;
+
+    position: relative;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 3px solid silver;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#A{/*static는 기본값*/
+    position: static;
+}
+
+#B{/*relative는 위치값을 저장해줘야함*/
+    position: relative;
+    top:50px;
+    left:50px;
+}
+
+#C{
+    position: absolute;
+    /*부모가 relative인 것을 기준으로*/
+    top: 10px;
+    left: 0;
+}
+
+#D{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#E{
+    position: sticky;
+    top: 10;
+}
+
+/*내 안에 있는 요소들을 정렬하는 것*/
+.container_bottom{
+    width: 800px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 4px solid red;
+
+    display: flex;
+    /* 주축 : 가로축. 교차축. 세로축 */
+
+    justify-content: center;
+    /* 주축을 중심으로 가운데 정렬 */
+    /* start, end, center, space-around, space-betWeen */
+
+    align-items: center;
+    /* 교차축을 중심으로 정렬 */
+}
+.items{
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+    border: 4px solid salmon;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .container_transform {
+    width: 100px;
+    height: 200px;
+    background-color: aqua;
+    border: 4px solid black;
+    position: relative;
+}
+.Transform_item{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(90, 136, 176);
+    margin: 10px;
+    padding: 5px;
+    border: 4px solid salmon;
+
+    position: absolute;
+}
+
+.Transform_item-A{
+top: 50px;
+left: 50px;
+
+transform: translate(-50%, -50%);
+/* x축 y축 */
+/* }
+
+.Transform_item-B{
+    top: 50%
+} */ 
+
+.container_transforms {
+    width: 600px;
+    height: 200px; /* 단위 추가 */
+    background-color: aqua;
+    border: 4px solid black;
+    position: relative;
+}
+
+.container_item {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(90, 136, 176);
+    margin: 10px;
+    padding: 5px;
+    border: 4px solid salmon;
+    position: absolute;
+}
+
+.transforms_item_A {
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%); /* 세미콜론 추가 */
+}
+
+.transforms_item_B {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(45deg); /* 가운데 기준 회전 */
+}
+
+.transforms_item_C {
+    transform: scale(1.5); /* 크기 조정 - 가운데 기준 */
+}

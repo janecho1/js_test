@@ -1,0 +1,8 @@
+@import "../reset.css"; 
+/*리셋*/
+@import "../common.css";
+@import "./header.css";
+@import "./footer.css";
+@import "../month-best.css";
+
+

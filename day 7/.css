@@ -1,0 +1,193 @@
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+table {
+    background-color: rgba(224, 200, 235, 0.8);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.table1 {
+    width: 90px;
+    font-weight: 600;
+    color: rgb(45, 34, 8);
+}
+
+.table2 {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.table3 {
+    width: 90px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+
+.subject-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(92, 144, 95, 0.821);
+    padding: 10px;
+    margin: 20px 10px;
+    color: aliceblue;
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.myimage,
+.myimage1,
+.myimage2,
+.myimage3,
+.myimage4 {
+    width: 70px;
+    height: auto;
+    margin-right: 100px;
+    margin-left: -6px;
+    transition: transform 0.3s ease;
+}
+
+.myimage:hover,
+.myimage1:hover,
+.myimage2:hover,
+.myimage3:hover,
+.myimage4:hover {
+    transform: scale(1.2);
+}
+
+
+.myimage {
+    display: block;
+    margin-top: -3px;
+    position: relative;
+    top: 7px;
+}
+
+.myimage1,
+.myimage2,
+.myimage3,
+.myimage4 {
+    margin-top: 7px;
+}
+
+
+.myimage3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.myimage4 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+
+.description,
+.description1,
+.description2,
+.description3,
+.description4 {
+    flex: 1;
+    margin-left: 100px;
+}
+
+.description {
+    margin-top: -95px;
+    margin-bottom: 70px;
+}
+
+.description1 {
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+.description2 {
+    margin-top: -70px;
+}
+
+.description3,
+.description4 {
+    margin-top: -90px;
+}
+.description4{
+    margin-top: -100px;
+    margin-bottom: 30px;
+}
+
+
+.box,
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(254, 244, 203, 0.821);
+    padding: 10px;
+    margin: 10px;
+    color: rgb(40, 61, 82);
+    border: 7px solid rgb(227, 143, 174);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+.tttt {
+    font-weight: 700;
+}
+
+.tt {
+    text-align: center;
+}
+
+.t2 {
+    margin-left: -20px;
+}
+
+
+.grid-container {
+    width: 600px;
+    height: 40px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.grid-container div {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+
+select, button {
+    font-size: 16px;
+    padding: 6px 10px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}

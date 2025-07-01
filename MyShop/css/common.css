@@ -1,0 +1,16 @@
+/*모든 화면에서 적용하고 싶은 CSS를 여기에 저장한다.*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+body{
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-bottom: 290px;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  

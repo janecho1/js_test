@@ -1,0 +1,67 @@
+.main__slider {
+    background-color: #4c5a4a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.main__slider-btn {
+    transform: scale(1.5);
+    color: rgb(255, 255, 255);
+}
+
+.main__slider-text {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px gray;/*x축, y축, 번짐정도, 색깔*/
+}
+
+.main__slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__slider-image-container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 15px 0;
+}
+
+.main__slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*비율을 맞춰서 들어감*/
+}
+
+.main__slider-bar {
+    width: 150px;
+    height: 5px;
+   /*border: 1px solid red;*/
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.main__slider-bar-item {
+    background-color: white;
+    height: 100%;
+    margin: 0 1px;
+}
+
+.main__slider-bar-item--visible{
+    width: 50%;
+}
+
+.main__slider-bar-item--invisible{
+    width: 25%;
+    opacity: 50%;
+}

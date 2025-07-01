@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블만들기</title>
+</head>
+
+<body>
+    <h1> 표만들기</h1>
+     <table>
+        <thead><!--표의 제목-->
+            <tr><!--표의 제목의 영역-->
+                <!--제목 영역의 요소-->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>42</td>
+                <td>43</td>
+            </tr>
+
+        
+    </tbody>
+   
+</table>
+</body>
+</html>

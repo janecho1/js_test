@@ -1,0 +1,11 @@
+@import "./reset.css"; 
+/*리셋*/
+@import "./common.css";
+@import "./component/header.css";
+@import "./slider.css";
+@import "./login.css";
+@import "./introduction.css";
+@import "./line.css";
+@import "./day.css";
+@import "./collect.css";
+@import "../css/component/footer.css";

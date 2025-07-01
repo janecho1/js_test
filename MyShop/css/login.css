@@ -1,0 +1,97 @@
+@import "./reset.css"; 
+/*리셋*/
+@import "./common.css";
+@import "./component/header.css";
+@import "../css/component/footer.css";
+
+.login__wrapper {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 750px 0; /* 상 하 좌우*/
+}
+
+.login__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.login__text {
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 7px;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__btn {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;/*상하 좌우*/
+    border: none;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login__btn svg {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+}
+
+.login__btn-kakao {
+    background-color: #fee500;
+    color: black;
+    margin: 50px;
+    margin-bottom: 30px;
+}
+
+.login__label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+}
+
+.login__input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+}
+
+.login__text-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+
+.login__btn-naver {
+    background-color: #1ec800;
+}
+.login__btn-naver svg {
+    fill: white;
+}
+.login__input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+
+}
+
+.login__label:focus-within .login__text {
+    font-weight: 600;
+}
+
+.login__text-box .login__text:hover {
+    color: rgb(0, 0, 0);
+}

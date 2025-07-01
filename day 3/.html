@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 폼 만들기</title>
+</head>
+<body>
+    <h1>자기 소개 양식 만들기</h1>
+    <h2>개인정보</h2>
+
+    <!--입력 폼에서 label은 꼭 필요함-->
+    <label>이름</label>
+    <input type="text"/>
+
+    <label>비밀번호</label>
+    <input type="password"/>
+
+    <label>성별</label>
+    <select>
+        <option>남자</option>
+        <option>여자</option>
+    </select>
+
+    <h2>자기소개</h2> 
+    <h3>성장과정을 작성하세요.</h3>
+    <textarea></textarea>
+    <textarea style="resize: name;"></textarea>
+    <textarea cols ="50", rows = "20"> </textarea>
+
+    <h2>좋아하는 과목</h2>
+    <input type="checkbox"/><label>국어</label>
+    <input type="checkbox"/><label>수학</label>
+    <input type="checkbox"/><label>영어</label>
+    <input type="checkbox"/><label>과학</label>
+    <input type="checkbox"/><label>프밍</label>
+    <input type="checkbox"/><label>컴구</label>
+    <input type="checkbox"/><label>화디</label>
+    <input type="checkbox"/><label>미술</label>
+    <input type="checkbox"/><label>체육</label>
+
+    <h2>학년</h2>
+    <input type="radio" name="team"/> <label>1학년</label>
+    <input type="radio"name="team"/> <label>2학년</label>
+    <input type="radio"name="team"/> <label>3학년</label>
+
+    <input type="button" value="완료"
+    name = "complete"/>
+
+</body>
+</html>

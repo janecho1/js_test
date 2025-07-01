@@ -1,0 +1,28 @@
+.main-slider {
+    margin-top: 50px;
+    background-color: rgb(9, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-slider_image {
+    object-fit: cover;/*비율을 맞춰서 들어감*/
+    width: 90vw;         /* 화면 가로 전체 */
+    height: 90vh;        /* 화면 세로 전체 */
+    overflow: hidden;     /* 넘치는 부분 제거 */
+}
+
+.main__slider-btn, .main__slider-btn1 {
+    color: rgb(102, 102, 102);
+    font-size: 70px;
+    padding: 0 9px;
+}
+
+.main__slider-btn:hover {
+    color: white;
+}
+.main__slider-btn1:hover {
+    color: white;
+}
