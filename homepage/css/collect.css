@@ -1,122 +1,152 @@
-.main__box {
+/*메인 컨테이너 (모든 내용을 감싸는 틀) */
+.main-container {
+    max-width: 1200px; 
+    width: 95%;        /* 화면이 작을 땐 꽉 차게 */
+    margin: 50px auto; /* 위아래 여백 50px, 좌우는 자동(가운데 정렬) */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* 박스들 사이 간격 */
+}
+
+/*상단 정보 박스*/
+.info-box {
     background-color: rgb(239, 243, 255);
-    display: flex;
-    width: 1370px;
-    height: 100px;
-    border-radius: 25px;
     border: 4px solid rgb(210, 208, 255);
-    margin-left: 60px;
-    align-items: center; /* 세로 가운데 정렬 */
-    padding-left: 20px;
-    margin-top: 50px;
-}
-
-.title__box--content {
-    font-size: 40px;
-    color: rgb(43, 59, 137);
-    margin-left: 20px;
-    margin-top: 0;
-}
-
-.main__box--day1,
-.main__box--day2 {
-    font-size: 18px;
-    margin-left: 57px; /* 음수 마진 제거하고 적당히 띄움 */
-    margin-top: 0;
-    align-self: center; /* flex 아이템 세로 가운데 */
-}
-
-.main__box--day2 {
-    margin-left: 50px;
-}
-
-.main__box--search-2 {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    width:1380px;
-    height: 90px;
-    border-radius: 30px;
-    border: none;
-    font-size: 20px;
-    margin-left: 60px;
-    align-items: center;
-    padding-left: 20px;
-    margin-top: 30px;
-}
-
-.main__box--diary {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column; /* 세로 쌓기 */
-    width: 1400px;
-    height: 300px;
     border-radius: 25px;
+    width: 96%;
+    padding: 30px;
+    flex-direction: column; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap; /* 화면 좁으면 줄바꿈 */
+    gap: 20px;
+}
+
+.info-title h2 {
+    font-size: 30px;
+    color: rgb(43, 59, 137);
+    margin: 0;
+}
+
+.info-stats {
+    display: flex;
+    gap: 30px; 
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
+}
+
+/*검색창*/
+.search-box {
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    height: 70px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    padding-left: 30px;
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    outline: none; /*클릭 시 파란 테두리 제거*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+}
+
+.search-input:focus {
+    border-color: rgb(210, 208, 255); /*클릭했을 때 색상*/
+}
+
+/*일기 목록 */
+.diary-list {
+    display: grid; 
+    /* 1fr 1fr 은 화면을 1:1 비율로 두 칸 만들라는 뜻 */
+    grid-template-columns: 1fr 1fr; 
+    gap: 90px; 
+    width: 100%;
+    max-width: 1300px; 
+    justify-items: center;
+}
+
+/* 개별카드 디자인 */
+.diary-card {
+    background-color: white;
     border: 2px solid rgb(209, 209, 209);
-    margin-left: 60px;
-    margin-top: 2%;
-    padding: 20px;
+    border-radius: 25px;
+    padding: 30px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s; /* 호버 효과 준비 */
+}
+
+.diary-card:hover {
+    transform: translateY(-5px); /*살짝 위로 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .diary-title {
-    font-size: 40px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 7px;
+    font-size: 32px;
+    margin: 0 0 15px 0;
+    color: #333;
 }
 
-.diary-title-tag {
-    margin-top: 10px;
-    margin-left: 20px;
-    position: static; /* absolute 제거 */
+/* 날짜, 기분 정보 */
+.diary-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
-.diary-day {
-    border: none;
-    height: 20px;
+.meta-item {
+    padding: 5px 12px;
     border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.diary-feel {
-    border: 2px solid rgb(122, 178, 106);
-    height: 20px;
-    border-radius: 20px;
-    padding: 5px;
+/*뱃지 스타일*/
+.badge-green {
     background-color: rgb(231, 255, 237);
+    border: 1px solid rgb(122, 178, 106);
+    color: rgb(48, 99, 34);
 }
 
-.diary-sun {
+.badge-gray {
+    background-color: white;
     border: 1px solid rgb(189, 189, 189);
-    height: 20px;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.diary-count {
-    border: 1px solid rgb(189, 189, 189);
-    height: 20px;
-    border-radius: 20px;
-    padding: 5px;
+    color: #666;
 }
 
 .diary-content {
-    margin-top: 40px;
-    font-size: 23px;
-    margin-left: 17px;
-    position: static; 
+    font-size: 20px;
+    color: #444;
+    margin: 0 0 25px 0;
+    line-height: 1.5; /*줄 간격 여유 있게 */
 }
 
-.diary-content--tag {
-    margin-top: 50px;
-    margin-left: 20px;
-    position: static; 
+/* 태그 영역 */
+.diary-tags {
+    display: flex;
+    gap: 10px;
 }
 
-.diary-tag1,
-.diary-tag2 {
-    border: 2px solid rgb(167, 167, 167);
-    height: 20px;
-    border-radius: 20px;
-    padding: 5px;
+.tag {
     background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(167, 167, 167);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none; /*밑줄 제거*/
+    color: #555;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.tag:hover {
+    background-color: rgb(200, 200, 200);
 }

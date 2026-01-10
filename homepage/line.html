@@ -21,7 +21,7 @@
                <h3 class="header__content--sentence">Every day holds something to be thankful for.</h3>
             </div>
 
-            <ul class="header__menu">
+            <ul class="header__menu" >
                 <li class="header__content header__content--badge"><a href="line.html"><i class="fa-solid fa-bookmark"></i></a></li>
                  <li class="header__content header__content--badge"><a href="collect.html"><i class="fa-solid fa-book"></i></a></li>
                 <li class="header__content header__content--badge"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
@@ -41,34 +41,38 @@
             </div>
     </header>
 
-<main>
-    <div class="today__line">
-        <div class="main__line--first">
+<main class="main-container">
+    
+    <section class="daily-card today-quote-section">
+        <div class="today__header">
             <h2 class="main__line--title">오늘의 한 줄</h2>
-            <h2 class="main__line--day">2025년 06월 14일 화요일</h2>
+            <p class="main__line--day">2025년 06월 14일 화요일</p>
         </div>
-        <span class="main__line--box">
+        
+        <div class="main__line--box">
             <h2 class="main__line--content">오늘 하루도 감사한 마음으로 시작하자.</h2>
-        </span>
-        <div class="main__line--after">
-            <span class="main__line--feel"><button class="main__line--feelbtn">ㅤㅤㅤ좋아요ㅤㅤㅤ</button>
-           </span>
-           <span class="main__line--change"><button class="main__line--changebtn">다른 명언 (2회 남음)</button></span>
-             </div>
-    </div>
-
-    <div class="today__line--2">
-        <div class="today__line2">
-            <h2 class="today__line2--title">오늘 본 명언들</h2>
         </div>
-            <span class="today__line2--content today__line2--content1">"오늘 하루도 감사한 마음으로 시작하자."</span>
-            <span class="today__line2--content today__line2--content2">"작은 변화가 큰 차이를 만든다."</span>
-    </div>
 
-    <div class="today__line--3">
-        <h2 class="today__line3--title">내가 좋아하는 명언</h2>
-        <h2 class="today__line3--content">아직 좋아요한 명언이 없습니다.</h2>
-    </div>
+        <div class="main__btn-group">
+            <button class="action-btn">좋아요</button>
+            <button class="action-btn">다른 명언 (2회 남음)</button>
+        </div>
+    </section>
+
+    <section class="daily-card recent-quotes-section">
+        <h2 class="section-title">오늘 본 명언들</h2>
+        
+        <div class="quote-list">
+            <div class="quote-item">"오늘 하루도 감사한 마음으로 시작하자."</div>
+            <div class="quote-item">"작은 변화가 큰 차이를 만든다."</div>
+        </div>
+    </section>
+
+    <section class="daily-card favorite-quotes-section">
+        <h2 class="section-title text-red">내가 좋아하는 명언</h2>
+        <div class="empty-message">아직 좋아요한 명언이 없습니다.</div>
+    </section>
+
 </main>
 
     <footer class="footer">

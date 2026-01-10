@@ -40,65 +40,73 @@
                </ul>
             </div>
     </header>
-  <main class="main">
-        <div class="main__day"> 
-        <h2 class="main__day--title">화요일 감사 일기</h2>
-        <h4 class="main__day--day">2025년 06월 10일</h4>
+
+  <main class="main-layout">
+    
+    <div class="left-sidebar">
+        
+        <div class="day-header">
+            <h2 class="day-title">화요일 감사 일기</h2>
+            <p class="day-date">2025년 06월 10일</p>
         </div>
     
-        <span class="main__diary">
-            <span class="main__memo"><h2 class="memo__title">빠른 메모</h2></span>
-            <textarea name="Diary id="Diary" class="main__diary--box" placeholder="간단한 메모를 작성하세요..."></textarea>
-            <span class="main__diary--second"><h2 class="main__diary--second-text">+ 메모 추가</h2></span>
-        </span>
-
-        <div class="main__note1">
-            <span class="main__note">
-                <h2 class="main__note--title">저장된 노트</h2>
-
-                <span class="main__note--box">
-                    <h2 class="main__note--text">오늘의 목표</h2>
-                    <h2 class="main__note--content">수학 복습 30분</h2>
-                </span>
-
-                <span class="main__note--box">
-                    <h2 class="main__note--text">주간 계획</h2>
-                    <h2 class="main__note--content">운동 3회, 독서 2시간</h2>
-                </span>
-
-                <span class="main__note--box">
-                    <h2 class="main__note--text">영감 문구</h2>
-                    <h2 class="main__note--content">작은 걸음이 큰 변화를 만든다.</h2>
-                </span>
-            </span>
+        <div class="widget-box memo-widget">
+            <h3 class="widget-title">빠른 메모</h3>
+            <textarea class="memo-input" placeholder="간단한 메모를 작성하세요..."></textarea>
+            <button class="memo-add-btn">+ 메모 추가</button>
         </div>
 
-        <div class="main__graph">
-            <h2 class="main__graph--title">화요일 통계</h2>
-            <span class="main__graph--box"><h3 class="main__graph--text">작성 시간                05분</h3></span>
-            <span class="main__graph--box"><h3 class="main__graph--text">연속 기록               9일</h3></span>
-            <span class="main__graph--box"><h3 class="main__graph--text">감사 항목                  5개</h3></span>
+        <div class="widget-box note-widget">
+            <h3 class="widget-title">저장된 노트</h3>
+            <div class="note-item">
+                <span class="note-label">오늘의 목표</span>
+                <span class="note-text">수학 복습 30분</span>
+            </div>
+            <div class="note-item">
+                <span class="note-label">주간 계획</span>
+                <span class="note-text">운동 3회, 독서 2시간</span>
+            </div>
+            <div class="note-item">
+                <span class="note-label">영감 문구</span>
+                <span class="note-text">작은 걸음이 큰 변화를 만든다.</span>
+            </div>
         </div>
 
-        <div class="real__box-1">
-            <span class="real__box">
- <div class="real__box--header">
-                <h2 class="real__box--title">오늘의 감사 일기</h2>
-               
-                <span class="real__box--mini">
-                    <h2 class="real__box--mini--text real__box--mini--text-1">ㅤ작성</h2>
-                    <h2 class="real__box--mini--text real__box--mini--text-2">ㅤIㅤ미리보기ㅤ</h2>
-                </span>
-</div>
-            <span class="real__box--contentbox">
-                <h2 class="real__box--content--title">제목 없음</h2>
-                <textarea class="real__box--content" placeholder="작성된 내용이 없습니다."></textarea>
-            </span>
-            </span>
+        <div class="widget-box stat-widget">
+            <h3 class="widget-title">화요일 통계</h3>
+            <div class="stat-item">
+                <span class="stat-label">작성 시간</span>
+                <span class="stat-value">05분</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">연속 기록</span>
+                <span class="stat-value">9일</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">감사 항목</span>
+                <span class="stat-value">5개</span>
+            </div>
         </div>
+    </div>
 
+    <section class="right-content">
+        <div class="editor-container">
+            <div class="editor-header">
+                <h2 class="editor-title">오늘의 감사 일기</h2>
+                <div class="editor-tabs">
+                    <button class="tab active">작성</button>
+                    <button class="tab">미리보기</button>
+                </div>
+            </div>
 
-    </main>
+            <div class="editor-paper">
+                <input type="text" class="editor-input-title" placeholder="제목을 입력하세요">
+                <textarea class="editor-textarea" placeholder="작성된 내용이 없습니다."></textarea>
+            </div>
+        </div>
+    </section>
+
+</main>
 
     <footer class="footer">
     <div class="footer__sub-box">

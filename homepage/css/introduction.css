@@ -1,124 +1,74 @@
-.introduction{
+/* 전체 레이아웃 */
+.introduction {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px; /* 아래 여유 공간 */
 }
-.introduction__title{
+
+/* 제목 스타일 */
+.introduction__title {
     font-size: 45px;
     font-weight: 600;
     color: rgb(58, 39, 10);
     margin-top: 7%;
 }
 
-.introduction__second{
+.introduction__second {
     font-size: 20px;
     font-weight: 200;
     margin-top: 25px;
+    margin-bottom: 50px; /* 제목과 박스 사이 간격 */
 }
 
-.introduction__main-box {
-    margin-top: -1%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%; 
+/* 그리드 레이아웃*/
+.introduction__grid-container {
+    display: grid; 
+    /* 1fr 1fr 은 화면을 1:1 비율로 두 칸 만들라는 뜻 */
+    grid-template-columns: 1fr 1fr; 
+    gap: 90px; /* 카드 사이 간격 */
+    width: 100%;
+    max-width: 1300px; /* 너무 넓게 퍼지지 않도록 제한 */
+    justify-items: center; /* 카드들을 가운데 정렬 */
 }
-.introduction__main-box.introduction__main-box-1 {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     width: 100%;             
-     gap: 90px;               
-}
-.introduction__main-box.introduction__main-box-2 {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-      width: 100%;              
-    gap: 90px;                
-}
-.introduction__main-box.introduction__main-box-3 {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-      width: 100%;              
-    gap: 90px;                
-}
+
+/* 개별 카드 공통 스타일 */
 .introduction__text-box {
     border: 3px solid rgb(221, 221, 221);
     border-radius: 10px;
-    width: 600px;
+    width: 600px; /* 고정 크기 유지 */
     height: 180px;
-    padding: 2%;
+    padding: 30px; /* % 대신 px 추천 */
+    box-sizing: border-box; /* 패딩 줘도 박스 크기 안 커지게 */
+    transition: 0.3s; /* 호버 효과 부드럽게 */
+    background-size: cover; /* 배경 이미지 꽉 차게 */
+    background-position: center;
 }
 
-.introduction__text-box.introduction__text-box-1:hover{
-    background-image: url('https://i.pinimg.com/736x/0e/34/cb/0e34cb40e4d19e278535c8e69af6f132.jpg');
-}
-
-.introduction__text-box.introduction__text-box-2:hover{
-    background-image: url('https://i.pinimg.com/736x/6c/bd/1f/6cbd1f258af8181d687e9ae6b99a4f86.jpg');
-}
-
-.introduction__text-box.introduction__text-box-3:hover{
-    background-image: url('https://i.pinimg.com/736x/5a/56/2a/5a562a46a8af58b5c833b31afb7eeead.jpg');
-}
-
-.introduction__text-box.introduction__text-box-4:hover{
-    background-image: url('https://i.pinimg.com/736x/e1/a5/5c/e1a55c3f0e29dcec8cd7d3f9d7238f95.jpg');
-}
-
-.introduction__text-box.introduction__text-box-5:hover{
-    background-image: url('https://i.pinimg.com/736x/9c/00/6f/9c006fdc436e7a9835b511e356517207.jpg');
-}
-
-.introduction__text-box.introduction__text-box-6:hover{
-    background-image: url('https://i.pinimg.com/736x/72/3e/14/723e14b0e304477bb4d524e00921b213.jpg');
-}
-
+/* 텍스트 스타일 */
 .introduction__text-title {
-font-size: 33px;
-font-weight: 500;
-color: rgb(65, 50, 39);
+    font-size: 33px;
+    font-weight: 500;
+    color: rgb(65, 50, 39);
+    margin: 0; /* 기본 마진 제거 */
 }
 
-
-.introduction__text-second{
+.introduction__text-second {
     font-size: 21px;
-    margin-top: 30px;
+    margin-top: 20px;
     color: rgb(46, 45, 45);
+    font-weight: normal; /* h4 기본 굵기 빼기 */
 }
 
-.introduction__text-box-1,.introduction__text-box-2{
-    margin-top: 10%;
-    background-color: rgb(255, 239, 236);
-}
+/* 배경색 그룹 */
+.introduction__text-box-1, .introduction__text-box-2 { background-color: rgb(255, 239, 236); }
+.introduction__text-box-3, .introduction__text-box-4 { background-color: rgb(255, 252, 238); }
+.introduction__text-box-5, .introduction__text-box-6 { background-color: rgb(239, 247, 255); }
 
-
-.introduction__text-box-3,.introduction__text-box-4{
-    margin-top: 10%;
-    background-color: rgb(255, 252, 238);
-}
-
-.introduction__text-box-5,.introduction__text-box-6{
-    margin-top: 10%;
-    background-color: rgb(239, 247, 255);
-}
-
-.introduction__second2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7%;
-}
-
-.introduction__second2--text {
-    background-color: rgb(216, 216, 216);
-    font-size: 45px;
-    border-radius: 30px;
-}
-.introduction__second2--text:hover{
-    background-color: rgb(95, 95, 95);
-}
+/* 호버 이미지 */
+.introduction__text-box-1:hover { background-image: url('https://i.pinimg.com/736x/0e/34/cb/0e34cb40e4d19e278535c8e69af6f132.jpg'); }
+.introduction__text-box-2:hover { background-image: url('https://i.pinimg.com/736x/6c/bd/1f/6cbd1f258af8181d687e9ae6b99a4f86.jpg'); }
+.introduction__text-box-3:hover {background-image: url('https://i.pinimg.com/736x/5a/56/2a/5a562a46a8af58b5c833b31afb7eeead.jpg');  }
+.introduction__text-box-4:hover {background-image: url('https://i.pinimg.com/736x/e1/a5/5c/e1a55c3f0e29dcec8cd7d3f9d7238f95.jpg');  }
+.introduction__text-box-5:hover {background-image: url('https://i.pinimg.com/736x/9c/00/6f/9c006fdc436e7a9835b511e356517207.jpg');  }
+.introduction__text-box-6:hover {background-image: url('https://i.pinimg.com/736x/72/3e/14/723e14b0e304477bb4d524e00921b213.jpg');  }

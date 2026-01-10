@@ -1,71 +1,92 @@
-.login {
-    display: flex; 
+.login-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 80px;
+    width: 100%;
 }
 
-.login__id--int {
+.login-title {
     font-weight: 600;
     font-size: 50px;
-    margin-bottom: 3%;
+    margin-bottom: 40px;
 }
 
-.login__id--input {
-    width: 350px;
-    height: 50px;
-    border-radius: 20px;
-    margin-bottom: 6%;
-}
-
-.login__pw--input {
-    width: 350px;
-    height: 50px;
-    border-radius: 20px;
-    margin-bottom: 6%;
-}
-
-.login__chk {
+/*입력창들*/
+.login-form {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* 세로*/
+    width: 350px; 
+    gap: 15px; /* 입력창 사이 간격*/
+}
+
+/*아이디,비번 공통 */
+.login-input {
+    width: 100%; /* 부모350px에 꽉 차게 */
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #ccc; 
+    padding-left: 20px; /*글자 앞 여백 */
+    padding-right: 20px;
+    box-sizing: border-box; /* 패딩 줘도 크기 안 커지게 */
+    font-size: 16px;
+    outline: none; /* 클릭 시 파란 테두리 제거 */
+}
+
+.login-input:focus {
+    border-color: black; /* 클릭했을 때 테두리 색 변경 */
+}
+
+/*체크박스 */
+.checkbox-wrapper {
+    display: flex;
     align-items: center;
-    margin-bottom: 2%;
-    margin-top: -10px;
-    margin-right: 250px;
+    gap: 10px; /* 체크박스와 글자 사이 간격 */
+    margin-bottom: 20px;
 }
 
-.login__btn {
+/*로그인 버튼*/
+.login-btn {
     background-color: black;
-    width: 350px;
+    color: white;
+    width: 100%;
     height: 50px;
     border-radius: 20px;
-    margin-bottom: 6%;    
-}
-
-.login__text {
-    color: white;
-}
-
-.login__btn:hover {
-    background-color: #2d2d2d;
     border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.login__join {
+.login-btn:hover {
+    background-color: #333;
+}
+
+/*회원가입 */
+.join-wrapper {
     display: flex;
+    align-items: baseline; /*글자의 밑부분을 기준으로 맞춰줌 */
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.login__join--btn {
-    color: #2d2d2d;
-    border: none;
+.join-text {
+    font-size: 16px;
+    color: #555;
+}
+
+.join-btn {
     background: none;
-    font-size: 17px;
-    margin-top: -7px;
+    border: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
 }
 
-.login__join--btn:hover {
+.join-btn:hover {
     text-decoration: underline;
-    font-size: 18px;
 }
-

@@ -40,31 +40,31 @@
                </ul>
             </div>
     </header>
-<main class="login">
-    <h2 class="login__id--int">환영합니다</h2>
-    <div class="id">
-   <span class="login__id">
-    <label for="login__id--label" class="login__id--label">
-        <input type="text" class="login__id--input"  placeholder="    아이디 또는 이메일주소"> </label></span>
+
+    <main class="login-container">
+    
+    <h2 class="login-title">환영합니다</h2>
+
+    <form class="login-form">
+        
+        <input type="text" class="login-input" placeholder="아이디 또는 이메일주소">
+        
+        <input type="password" class="login-input" placeholder="비밀번호">
+        
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="auto-login">
+            <label for="auto-login">자동 로그인</label>
         </div>
 
-        <div class="pw">
-            <span class="login__pw"><label for="login__pw" class="login__pw--label"><input type="password" class="login__pw--input" placeholder="    비밀번호"></label></span>
-        </div>
-
-<span class="login__chk">
-        <label for="login__chk" class="login__chk--label"><input type="checkbox" class="login__chk--input">
-        자동 로그인</input></label>
-</span>
-      <div class="login__next">
-        <button class="login__btn"><h2 class="login__text">로그인</h2></button>
-      </div>
+        <button type="button" class="login-btn">로그인</button>
+    </form>
       
-    <div class="login__join">
-        <h2 class="login__text--bottom">계정이 없으신가요?</h2>
-         <button class="login__join--btn">회원가입</button>
+    <div class="join-wrapper">
+        <span class="join-text">계정이 없으신가요?</span>
+        <button type="button" class="join-btn">회원가입</button>
     </div>
-        </main>
+
+</main>
 
     <footer class="footer">
     <div class="footer__sub-box">
