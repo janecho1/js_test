@@ -1,8 +1,8 @@
-const sentence = document.querySelector(".header__content--sentence"); // 1. 문장 요소 선택
+const sentence = document.querySelector(".header__content-sentence"); // 1. 문장 요소 선택
 //scroll 진행률
 window.addEventListener("load", () => { //화면 다 로드되면 실행
   const barcontainer = document.querySelector(".bar-container"); 
-  const bar = document.querySelector(".bar");
+  const perBar = document.querySelector(".perBar");
   const coverHeight = window.innerHeight;//화면 자체의 높이
 
   window.addEventListener("scroll", () => {
@@ -19,7 +19,7 @@ window.addEventListener("load", () => { //화면 다 로드되면 실행
     //진행률 계산
     const documentHeight = document.body.scrollHeight - coverHeight;//화면전체높이-현재화면자체의높이(끝까지가면못내려가니까)=실질적으로스크롤할수있는화면길이
 
-    bar.style.width = (scrollNum / documentHeight) * 100 + "%";
+    perBar.style.width = (scrollNum / documentHeight) * 100 + "%";
   });
 });
 

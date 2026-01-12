@@ -11,13 +11,13 @@
     font-size: 45px;
     font-weight: 600;
     color: rgb(58, 39, 10);
-    margin-top: 7%;
+    margin-top: 3%;
 }
 
 .introduction__second {
     font-size: 20px;
     font-weight: 200;
-    margin-top: 25px;
+    margin-top: 12px;
     margin-bottom: 50px; /* 제목과 박스 사이 간격 */
 }
 

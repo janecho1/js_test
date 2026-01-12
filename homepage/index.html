@@ -9,28 +9,28 @@
  <script src="./js/script.js" defer></script>
 </head>
 <body>
-    <header class="header">
+     <header class="header">
     <div class="header__top">
         <ul class="header__list-box">
             <li class="header__content1">설정</li>
-            <li class="header__content1">활동 통계</li>
-            <li class="header__content1">공개게시판</li>
+            <li class="header__content1">통계</li>
+            <li class="header__content1">노트</li>
         </ul>
-        
+
         <div class="header__title--box">
             <h1 class="header__title"><a href="index.html">Gratitude Diary</a></h1>
-            <h3 class="header__content--sentence">Every day holds something to be thankful for.</h3>
+            <h3 class="header__content-sentence">Every day holds something to be thankful for.</h3>
         </div>
 
         <ul class="header__menu">
-            <li class="header__content header__content--badge"><a href="line.html"><i class="fa-solid fa-bookmark"></i></a></li>
-            <li class="header__content header__content--badge"><a href="collect.html"><i class="fa-solid fa-book"></i></a></li>
-            <li class="header__content header__content--badge"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
-        </ul>
+            <li class="header__content-badge"><a href="line.html"><i class="fa-solid fa-bookmark"></i></a></li>
+            <li class="header__content-badge"><a href="collect.html"><i class="fa-solid fa-book-open"></i></a></li>
+            <li class="header__content-badge"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+        </ul>  
     </div> 
     <!--스크롤 진행률-->
     <div class="bar-container">
-        <div class="bar"></div>
+        <div class="perBar"></div>
     </div>
 
     <div class="header__bottom"> 
@@ -44,17 +44,14 @@
             <li class="header__content"><a href="satday.html">토요일</a></li>
         </ul>
     </div>
-</header>
 
+</header>
 <main class="main">
     <div class="slider">
-
-        <div class="slide_container"> <!--양옆 화살표 제외하고 가운데 콘텐츠, 이미지+막대기들만 따로 묶음-->
         <button class="leftButton" id="prevBtn"><i class="fa-solid fa-chevron-left fa-xl"></i></button>
-        <button class="rightButton" id="nextBtn"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
-  
-     <img id="slideImage" src="" alt="슬라이드 이미지">
-
+        
+    <div class="slide_container"> <!--양옆 화살표 제외하고 가운데 콘텐츠, 이미지+막대기들만 따로 묶음-->
+     <img id="slideImage" src="" alt="슬라이드 이미지">    
       <div class="progress-bars"><!--바들만 따로 묶어서 관리-->
         <div class="bar active"></div><!--css로 색칠해서 눈에 보이게 함-->
         <div class="bar"></div>
@@ -66,6 +63,8 @@
         <div class="bar"></div>
       </div>
     </div>
+
+    <button class="rightButton" id="nextBtn"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
 </div>
 
 <div class="introduction">
@@ -115,24 +114,19 @@
  <button button="type" class="topBtn">TOP</button>
 
 <footer class="footer">
+    <span class="footer__title">Gratitude Diary</span>
+    
     <div class="footer__sub-box">
-        <span class="footer__title">Gratitude Diary</span>
         <small class="footer__text">주소: 대전광역시 유성구 가정북로 76</small>
         <small class="footer__text">☏ 070-0595-1314</small>
         <small class="footer__text">&copy; JI EUN</small>
     </div>
 
-    <div class="footer__sub-box footer__social-box">
-            <span class="footer__text--1">
-                <i class="fa-brands fa-facebook-f fa-2xl"></i>
-            </span>
-            <span class="footer__text--1">
-                <i class="fa-brands fa-twitter fa-2xl"></i>
-            </span>
-            <span class="footer__text--1">
-                <i class="fa-brands fa-instagram fa-2xl"></i>
-            </span>
-        </div> 
+    <div class="footer__social-box">
+        <span class="fa-brands fa-facebook-f fa-2xl"></span>
+        <span class="fa-brands fa-twitter fa-2xl"></span>
+        <span class="fa-brands fa-instagram fa-2xl"></span>
+    </div> 
 
 </footer>
 

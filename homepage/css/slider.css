@@ -1,17 +1,19 @@
 .slider {
-    margin-top: 50px;
+    position: relative;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .slide_container {
   position: relative;   /* 기준 */
-  width: 90vw; 
+  /* width: 90vw;  */
 }
 
 #slideImage {
     object-fit: cover;/*비율을 맞춰서 들어감*/
-    width: 90vw;         /* 화면 가로 전체 */
+    width: 100vw;         /* 화면 가로 전체 */
     height: 90vh;        /* 화면 세로 전체 */
   
     overflow: hidden;     /* 넘치는 부분 제거 */
@@ -23,40 +25,40 @@
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .bar {
   width: 30px;
   height: 3px;
   margin: 0 2px;
-  background-color: #cfbed1b6;
+  background-color: #ffffffb6;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .bar.active {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-  background-color: #000000;
+  background-color: #a694a7;
+  border-radius: 5px;
 }
 
 .leftButton, .rightButton{
     position: absolute;
-    top: 50%;
+    top: 50%;/*버튼의 가장 윗부분을 부모의 50% 지점*/
     transform: translateY(-50%);
 
-    color: rgb(102, 102, 102);
-    font-size: 70px;
-    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
     border: none;
-    z-index: 10;
+    z-index: 1000;
 
     background-color: transparent;
     cursor: pointer;
 }
 
 .leftButton:hover, .rightButton:hover {
-    color: white;
+    color: rgb(49, 49, 49);
 }
 
-.leftButton { left: 0; }
-.rightButton { right: 0; }
+.leftButton { left: 10px; }
+.rightButton { right: 10px; }
