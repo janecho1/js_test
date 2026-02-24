@@ -71,8 +71,8 @@
  .bar-container.fixed {
   position: fixed;
   top: 0;
-  left: 0; 
-z-index: 9999;
+  z-index: 9999;
+  /* left: 0;  */
 }
 
 .header__content {
@@ -86,19 +86,4 @@ z-index: 9999;
     align-items: center;
     font-size: 20px;
     gap: 70px;
-}
-
-.topBtn {
-    margin-left: 108px;
-    padding: 10px;
-    border-radius: 6px;
-    background-color: #eee;
-    border: 2px solid #eee;
-    transition: all .3s ease-out;
-}
-
-.topBtn:hover {
-    background-color: #000;
-    border-color: #333;
-    color: #fff;
 }

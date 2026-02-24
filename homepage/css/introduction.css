@@ -21,6 +21,11 @@
     margin-bottom: 50px; /* 제목과 박스 사이 간격 */
 }
 
+.introduction__title div,
+.introduction__second div {
+    display: inline-block; 
+}
+
 /* 그리드 레이아웃*/
 .introduction__grid-container {
     display: grid; 

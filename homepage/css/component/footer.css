@@ -40,3 +40,28 @@
     cursor: pointer;
     color: rgb(45, 34, 21);
 }
+
+.topBtn {
+    /* margin-left: 108px; */
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #eee;
+    border: 2px solid #eee;
+  z-index: 9999;
+
+    transition: all .4s ease-out;
+    position: fixed;
+  right: 20px;
+  bottom: 0;            
+  opacity: 0;            
+}
+
+.topBtn:hover {
+    background-color: #000;
+    border-color: #333;
+    color: #fff;
+}
+ .topBtn.fixed {
+  bottom: 50px;         
+  opacity: 1;            
+}

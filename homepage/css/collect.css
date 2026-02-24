@@ -95,18 +95,19 @@
 /* 날짜, 기분 정보 */
 .diary-meta {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;/*없어도 되나?*/
+    flex-wrap: wrap;/*뭔 기능?*/
     gap: 10px;
     margin-bottom: 20px;
-    align-items: center;
 }
 
 .meta-item {
+    display: flex;
+    justify-content: center/*써야하는지? 다른 태그 써야 하는지?*/;
+    align-items: center;
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 14px;
-    display: flex;
-    align-items: center;
     gap: 5px;
 }
 
@@ -127,10 +128,10 @@
     font-size: 20px;
     color: #444;
     margin: 0 0 25px 0;
-    line-height: 1.5; /*줄 간격 여유 있게 */
+    line-height: 1.5; /*줄 간격 여유 있게-행간*/
 }
 
-/* 태그 영역 */
+/* 태그 */
 .diary-tags {
     display: flex;
     gap: 10px;
@@ -145,6 +146,7 @@
     color: #555;
     font-size: 14px;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .tag:hover {

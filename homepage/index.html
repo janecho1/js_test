@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/58a3ea2b95.js" crossorigin="anonymous"></script>
  <script src="./js/script.js" defer></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
      <header class="header">
@@ -53,7 +55,7 @@
     <div class="slide_container"> <!--양옆 화살표 제외하고 가운데 콘텐츠, 이미지+막대기들만 따로 묶음-->
      <img id="slideImage" src="" alt="슬라이드 이미지">    
       <div class="progress-bars"><!--바들만 따로 묶어서 관리-->
-        <div class="bar active"></div><!--css로 색칠해서 눈에 보이게 함-->
+        <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -68,9 +70,23 @@
 </div>
 
 <div class="introduction">
-    <h2 class="introduction__title">Gratitude Diary의 특별한 기능들</h2>
-    <h3 class="introduction__second">매일의 소중한 순간들을 기록하고 되돌아볼 수 있는 다양한 기능을 제공합니다</h3>
+    <h2 class="introduction__title">
+        <div>G</div><div>r</div><div>a</div><div>t</div><div>i</div><div>t</div><div>u</div><div>d</div><div>e</div><div>&nbsp;</div><div>D</div><div>i</div><div>a</div><div>r</div><div>y</div><div>의</div><div>&nbsp;</div><div>특</div><div>별</div><div>한</div><div>&nbsp;</div><div>기</div><div>능</div><div>들</div>
+    </h2>
 
+    <h3 class="introduction__second">
+        <div>매</div><div>일</div><div>의</div><div></div>
+        <div>소</div><div>중</div><div>한</div><div></div>
+        <div>순</div><div>간</div><div>들</div><div>을</div><div></div>
+        <div>기</div><div>록</div><div>하</div><div>고</div><div></div>
+        <div>되</div><div>돌</div><div>아</div><div>볼</div><div></div>
+        <div>수</div><div></div>
+        <div>있</div><div>는</div><div></div>
+        <div>다</div><div>양</div><div>한</div><div></div>
+        <div>기</div><div>능</div><div>을</div><div></div>
+        <div>제</div><div>공</div><div>합</div><div>니</div><div>다</div>
+    </h3>
+    
     <div class="introduction__grid-container">
 
         <div class="introduction__text-box introduction__text-box-1">
